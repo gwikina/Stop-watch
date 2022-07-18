@@ -62,6 +62,8 @@ startStopBtn.addEventListener('click', function(){
 })
 
 resetBtn.addEventListener('click', function(){
+    window.clearInterval(timerInterval)
+    timerStatus = "stopped"
     let displayTimer = document.getElementById('timer')
     displayTimer.innerText = "00:00:00" 
     hours = 0
